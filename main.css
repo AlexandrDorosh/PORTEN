@@ -1,0 +1,319 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("./fonts/2221.ttf");
+}
+@font-face {
+  font-family: "PostNoBillsColombo";
+  src: url("./fonts/PostNoBillsColombo-Bold.ttf");
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.top {
+  height: 44px;
+  background-color: black;
+  width: 100%;
+  color: gray;
+  text-indent: 10px;
+  font-size: 12px;
+  font-family: "PT Sans";
+}
+.top li {
+  list-style-type: none;
+}
+.left-ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.c-header-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+/* p{
+    margin: auto;
+} */
+.c-header-1 a {
+  color: gray;
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+.right-ul {
+  display: flex;
+  flex-direction: row;
+  text-indent: 3px;
+  margin: 0;
+}
+.login {
+  font-size: 16px;
+  margin-right: 10px;
+}
+.phone {
+  transform: rotate(90deg);
+  margin-bottom: 10px;
+  margin-right: 5px;
+}
+
+.header_bottom {
+  height: 80px;
+  background-color: #0f0f0f;
+  width: 100%;
+  color: white;
+  font-size: 14px;
+  font-family: "PostNoBillsColombo";
+}
+.header_bottom h1 {
+  font-size: 36px;
+  margin: auto;
+}
+.header_bottom h1 a {
+  color: white;
+}
+.header__list {
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.menu {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: "PT Sans";
+}
+.menu ul a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: gray;
+  text-decoration: none;
+}
+.menu ul a:hover {
+  color: white;
+}
+.header_bottom li {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  height: 100%;
+  align-items: center;
+}
+.header_bottom li:hover {
+  list-style-type: none;
+  background-color: #1f1f1f;
+}
+.c-header-2 {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  color: white;
+  margin-left: 40px;
+}
+
+.poster {
+  position: relative;
+  z-index: 1;
+  padding: 0;
+}
+.poster img {
+  width: 100%;
+  max-height: 810px;
+  display: flex;
+}
+.poster .center {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.poster .poster_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.poster .square {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 4px white solid;
+  width: 320px;
+  height: 320px;
+}
+
+.square h1 {
+  font-family: "PostNoBillsColombo";
+  font-size: 64px;
+  border-bottom: 2px white solid;
+}
+.square p {
+  font-size: 22px;
+  margin-top: 10px;
+  font-family: 'PT Sans';
+}
+
+.poster_bottom {
+  margin-top: 80px;
+}
+
+.poster_bottom p {
+  text-align: center;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 150%;
+}
+
+.header__burger {
+  display: none;
+}
+
+
