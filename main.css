@@ -131,6 +131,14 @@ table {
   font-family: "PostNoBillsColombo";
   src: url("./fonts/PostNoBillsColombo-Bold.ttf");
 }
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("./fonts/PlayfairDisplay-Bold.ttf");
+}
+@font-face {
+  font-family: "PlayfairDisplay_r";
+  src: url("./fonts/PlayfairDisplay-Regular.ttf");
+}
 
 .container {
   max-width: 1200px;
@@ -316,4 +324,123 @@ a:hover {
   display: none;
 }
 
+.main_1 {
+  display: flex;
+  padding: 0;
+}
+
+.main_1_watch {
+  flex-grow: 6;
+  display: flex;
+  flex-direction: column;
+  max-width: 1040px;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+.main_1_watch h1 {
+  font-family: "PlayfairDisplay";
+  font-size: 36px;
+}
+.main_1_watch hr {
+  width: 120px;
+  background-color: white;
+  margin: 50px 0;
+}
+.three_watch {
+  display: flex;
+  justify-content: center;
+}
+
+.container_watch {
+  margin: 0 25px;
+}
+.container_watch h3 {
+  font-family: "PlayfairDisplay_r";
+  font-size: 18px;
+  padding-top: 25px;
+}
+
+.container_watch p {
+  font-family: "PlayfairDisplay";
+  font-size: 16px;
+  padding-top: 10px;
+  color: lightgrey;
+}
+
+.watch {
+  background-color: #191b1c;
+  height: auto;
+  max-width: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_1_photo {
+  padding: 0;
+}
+
+.main_1_photo img {
+  width: 100%;
+  max-height: 730px;
+  display: flex;  
+}
+.container_watch img{
+    width: 100%;
+    height: auto;
+    padding: 55px 22px;
+}
+
+.main_2 {
+    display: flex;
+    padding: 0;
+  }
+.main_2_photo {
+    padding: 0;
+  }
+.main_2_photo img {
+    width: 100%;
+    max-height: 600px;
+    display: flex;  
+  }
+
+.main_2_info {
+    flex-grow: 6;
+    display: flex;
+    flex-direction: column;
+    max-width: 1040px;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+.main_2_info p{
+    max-width: 471px;
+    padding: 0 20px 60px 20px;
+    font-family: 'PT Sans';
+    font-size: 14px;
+    line-height: 140%;
+  }
+.main_2_info h1 {
+    font-family: "PlayfairDisplay_r";
+    font-size: 36px;
+  }
+.main_2_info hr {
+    width: 120px;
+    margin: 40px 0;
+    background-color: white;
+  }
+
+.main_2_info button {
+    font-family: 'PT Sans';
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: white solid 1px;
+  }
 
