@@ -173,7 +173,9 @@ table {
   align-items: center;
   height: 100%;
 }
-
+/* p{
+    margin: auto;
+} */
 .c-header-1 a {
   color: gray;
   text-decoration: none;
@@ -280,7 +282,7 @@ a:hover {
   transform: translate(-50%, -50%);
   color: white;
 }
-.poster .poster_container {
+.poster .test {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -443,87 +445,86 @@ a:hover {
   }
 
   .container_news{
-    background-color: black;
-    padding: 0;
-}
+      background-color: black;
+      padding: 0;
+  }
 
 .news{
-  padding-top: 120px;
-  padding-bottom: 150px;
+    padding-top: 120px;
+    padding-bottom: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+.news h1{
+    font-family: 'PlayfairDisplay';
+    font-size: 36px;
+}
+.news p{
+    margin-top: 10px;
+    color: lightgrey;
+}
+
+.news hr{
+    width: 120px;
+    background-color: white;
+    margin: 40px 0;
+}
+
+.news_watchs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.new_watch {
+    margin: 20px 12px;
+  }
+
+.new_watch img{
+    width: 100%;
+    height: auto;
+    padding: 55px 22px;
+}
+
+.new_watch h3 {
+    margin-top: 25px;
+}
+.new_watch з {
+    color: lightgrey;
+}
+
+.container_brands{
+  background-color: #0F0F0F;
+  color: white;
+}
+.brands{
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  color: white;
 }
-.news h1{
-  font-family: 'PlayfairDisplay';
+.brands h1{
   font-size: 36px;
+  font-family: 'PlayfairDisplay';
+  margin-top: 60px;
 }
-.news p{
-  margin-top: 10px;
-  color: lightgrey;
-}
-
-.news hr{
+.brands hr{
   width: 120px;
   background-color: white;
   margin: 40px 0;
 }
-
-.news_watchs{
+.brands_img{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-.new_watch {
-  margin: 20px 12px;
-}
-
-.new_watch img{
-  width: 100%;
-  height: auto;
-  padding: 55px 22px;
-}
-
-.new_watch h3 {
-  margin-top: 25px;
-}
-.new_watch з {
-  color: lightgrey;
-}
-
-.container_brands{
-background-color: #0F0F0F;
-color: white;
-}
-.brands{
-display: flex;
-justify-content: space-between;
-align-items: center;
-flex-direction: column;
-}
-.brands h1{
-font-size: 36px;
-font-family: 'PlayfairDisplay';
-margin-top: 60px;
-}
-.brands hr{
-width: 120px;
-background-color: white;
-margin: 40px 0;
-}
-.brands_img{
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-margin-bottom: 80px;
+  margin-bottom: 80px;
 }
 .brands_img img{
-padding: 0 15px;
+  padding: 0 15px;
 }
-
 .footer_top {
   position: relative;
   z-index: 1;
@@ -634,4 +635,445 @@ padding: 0 15px;
   color: white;
   padding: 10px 20px;
   border: 0;
+}
+
+.spoiler{
+  display: none;
+}
+.one{
+  display: none
+}
+.two{
+  display: none
+}
+.three{
+  display: none
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+  .poster .square {
+    width: 230px;
+    height: 230px;
+    border: 2px white solid;
+  }
+  .square h1 {
+    font-family: "PostNoBillsColombo";
+    font-size: 40px;
+    border-bottom: 2px white solid;
+  }
+  .square p {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+  .main_2_info hr {
+    margin: 20px 0;
+  }
+  .main_2_info p {
+    line-height: 120%;
+  }
+  .poster_bottom p {
+    line-height: 150%;
+  }
+  .main_1_watch hr {
+    margin: 16px 0;
+  }
+  
+  .footer_about p{
+    font-size: 12px;
+    line-height: 130%;
+    margin-top: 30px;
+  }
+  .footer_about h1{
+    font-size: 20px;
+  }
+
+  .footer_categories{
+    margin-top: 30px;
+    font-size: 12px;
+  }
+  .footer_about_2 h1{
+    font-size: 20px;
+  }
+  .footer_categories button{
+    font-size: 14px;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    margin-right: 10px;
+  }
+
+  .footer_about_3 h1{
+    font-size: 20px;
+  }
+  .footer_about_3 p{
+    font-size: 12px;
+    line-height: 130%;
+    margin: 30px 0;
+  }
+  .footer_subscribe input{
+    height: 40px;
+    padding-left: 20px;
+    border: 0;
+  }
+  .footer_subscribe button{
+    background-color: #0F0F0F;
+    color: white;
+    padding: 8px 16px;
+    border: 0;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+  .poster .square {
+    width: 180px;
+    height: 180px;
+    border: 2px white solid;
+  }
+  .square h1 {
+    font-family: "PostNoBillsColombo";
+    font-size: 35px;
+    border-bottom: 2px white solid;
+  }
+  .square p {
+    margin-top: 5px;
+    font-size: 12px;
+  }
+  .poster_bottom {
+    margin-top: 25px;
+  }
+  .container_watch h3 {
+    padding-top: 15px;
+  }
+  .container_watch img {
+    padding: 30px 22px;
+  }
+  .main_2_photo img{
+    max-width: 630px;
+}
+  .main_2_info hr {
+    margin: 10px 0;
+  }
+  .main_2_info button {
+    padding: 5px 10px;
+    font-size: 16px;
+  }
+  .main_2_info p{
+    font-size: 13px;
+    padding: 0 20px 20px 20px;
+  }
+
+  .footer_about p{
+    font-size: 10px;
+    line-height: 120%;
+    margin-top: 20px;
+  }
+  .footer_about h1{
+    font-size: 16px;
+  }
+
+  .footer_categories{
+    margin-top: 20px;
+    font-size: 10px;
+  }
+  .footer_about_2 h1{
+    font-size: 16px;
+  }
+  .footer_categories button{
+    font-size: 12px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    margin-right: 5px;
+  }
+  .footer_about_3 h1{
+    font-size: 16px;
+  }
+  .footer_about_3 p{
+    font-size: 10px;
+    line-height: 120%;
+    margin: 20px 0;
+  }
+  .footer_subscribe input{
+    height: 35px;
+    width: 110px;
+    font-size: 15px;
+    padding-left: 10px;
+    border: 0;
+  }
+  .footer_subscribe button{
+    background-color: #0F0F0F;
+    color: white;
+    font-size: 15px;
+    padding: 8px 14px;
+    border: 0;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: none;
+  }
+  body.lock {
+    overflow: hidden;
+  }
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 4;
+  }
+  .header__burger span {
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    top: 9px;
+    width: 100%;
+    height: 2px;
+    transition: all 0.3s ease 0s;
+  }
+  .header__burger:before,
+  .header__burger:after {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+  }
+  .header__burger:before {
+    top: 0;
+  }
+  .header__burger:after {
+    bottom: 0;
+  }
+
+  .header__burger.active:before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  .header__burger.active:after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+  .header__burger.active span {
+    transform: scale(0);
+  }
+  .poster .square {
+    width: 140px;
+    height: 140px;
+    border: 2px white solid;
+  }
+  .square h1 {
+    font-family: "PostNoBillsColombo";
+    font-size: 30px;
+    border-bottom: 2px white solid;
+  }
+  .square p {
+    margin-top: 5px;
+    font-size: 10px;
+  }
+  .poster_bottom p{
+      font-size: 14px;
+  }
+  .menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 150px 10px 20px 10px;
+    z-index: 4;
+    transition: all 0.3s ease 0s;
+    overflow: auto;
+  }
+  .menu.active {
+    top: 0;
+  }
+  .header__list {
+    display: block;
+    height: auto;
+    text-align: center;
+  }
+  .menu {
+    display: block;
+    height: auto;
+    text-align: center;
+  }
+  .header__list li {
+    margin: 0 0 50px 0;
+  }
+  .main_1{
+      display: flex;
+      flex-direction: column-reverse;
+  }
+  .main_1_watch{
+      width: auto;
+      padding: 20px 0;
+  }
+  .container_watch h3 {
+    padding-top: 15px;
+  }
+  .main_2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .main_2_photo img{
+    max-width: 100%;
+}
+  .main_2_info{
+      padding-top: 30px;
+  }
+  .main_2_info button{
+      margin: 20px 0;
+  }
+  .main_2_info p{
+    font-size: 14px;
+    line-height: 140%;
+  }
+  .footer_about h1{
+    font-size: 16px;
+  }
+
+  .footer_categories{
+    margin-top: 20px;
+    font-size: 10px;
+  }
+  .footer_about_2 h1{
+    font-size: 16px;
+  }
+  .footer_categories button{
+    font-size: 12px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    margin-right: 5px;
+  }
+  .footer_about_3 h1{
+    font-size: 16px;
+  }
+  .footer_about_3 p{
+    font-size: 10px;
+    line-height: 120%;
+    margin: 20px 0;
+  }
+  .footer_subscribe input{
+    height: 35px;
+    width: 110px;
+    font-size: 15px;
+    padding-left: 10px;
+    border: 0;
+  }
+  .footer_subscribe button{
+    background-color: #0F0F0F;
+    color: white;
+    font-size: 15px;
+    padding: 8px 14px;
+    border: 0;
+  }
+  .footer_center_test{
+    display: none;
+  }
+
+  .spoiler{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .h1_two{
+    margin: 0 20px;
+  }
+  .footer_categories{
+    display: flex;
+  }
+  .one{
+    display: none;
+    color:  lightgrey;
+    margin: 10px 20px;
+  }
+  .two{
+    display: none;
+    margin: 20px 20px;
+  }
+  .two button{
+    font-size: 14px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: lightgrey;
+    color: #0F0F0F;
+    margin-right: 20px;
+    border: 0px;
+  }
+  .three{
+    display: none;
+    color:  lightgrey;
+    margin: 10px 20px;
+  }
+  .three input{
+    max-width: 200px;
+    margin-top: 20px;
+    height: 42px;
+    font-family: 'PT Sans';
+    background-color: white;
+    color: #0F0F0F;
+    padding-left: 20px;
+    border: 0;
+  }
+
+  .three button{
+    margin-top: 20px;
+    background-color: #0F0F0F;
+    color: white;
+    padding: 10px 20px;
+    border: 0;
+  }
+  
+  
+}
+
+@media (max-width: 576px) {
+  .c-header-1 {
+    flex-direction: column;
+    padding: 5px 0;
+  }
+  .left-ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .right{
+    padding: 5px 0;
+  }
+  .top {
+    height: auto;
+  }
+  .poster .square {
+    width: 80px;
+    height: 80px;
+    border: 2px white solid;
+  }
+  .square h1 {
+    font-family: "PostNoBillsColombo";
+    font-size: 20px;
+    border-bottom: 2px white solid;
+  }
+  .square p {
+    margin-top: 5px;
+    font-size: 7px;
+  }
+  .poster_bottom p{
+    font-size: 8px;
+  }
+  .three_watch{
+    flex-direction: column;
+  }
+  .container_watch {
+    padding: 10px 0;
+  }
+  .main_1_watch{
+      padding-top: 20px;
+  }
+  
 }
