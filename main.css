@@ -282,6 +282,43 @@ a:hover {
   transform: translate(-50%, -50%);
   color: white;
 }
+.main_1_photo{
+    position: relative;
+    z-index: 1;
+    padding: 0;
+}
+
+
+
+
+.main_1_photo .center {
+  position: absolute;
+  z-index: 2;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.main_1_photo .main_1_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main_1_text h1{
+  font-size: 36px;
+  font-family: 'PlayfairDisplay';
+}
+.main_1_text hr{
+  background-color: white;
+  width: 120px;
+  margin: 30px 0;
+}
+.main_1_text h2{
+  font-family: 'PT Sans';
+  font-size: 18px;
+  border: 1px solid white;
+  padding: 15px 30px;
+}
 .poster .test {
   display: flex;
   flex-direction: column;
@@ -810,6 +847,22 @@ a:hover {
     padding: 8px 14px;
     border: 0;
   }
+
+  .main_1_text h1{
+    font-size: 26px;
+    font-family: 'PlayfairDisplay';
+  }
+  .main_1_text hr{
+    background-color: white;
+    width: 120px;
+    margin: 15px 0;
+  }
+  .main_1_text h2{
+    font-family: 'PT Sans';
+    font-size: 18px;
+    border: 1px solid white;
+    padding: 10px 20px;
+  }
 }
 @media (max-width: 767px) {
   .container {
@@ -1030,7 +1083,21 @@ a:hover {
     padding: 10px 20px;
     border: 0;
   }
-  
+  .main_1_text h1{
+    font-size: 36px;
+    font-family: 'PlayfairDisplay';
+  }
+  .main_1_text hr{
+    background-color: white;
+    width: 120px;
+    margin: 30px 0;
+  }
+  .main_1_text h2{
+    font-family: 'PT Sans';
+    font-size: 18px;
+    border: 1px solid white;
+    padding: 15px 30px;
+  }
   
 }
 
@@ -1074,6 +1141,22 @@ a:hover {
   }
   .main_1_watch{
       padding-top: 20px;
+  }
+
+  .main_1_text h1{
+    font-size: 22px;
+    font-family: 'PlayfairDisplay';
+  }
+  .main_1_text hr{
+    background-color: white;
+    width: 120px;
+    margin: 15px 0;
+  }
+  .main_1_text h2{
+    font-family: 'PT Sans';
+    font-size: 15px;
+    border: 1px solid white;
+    padding: 7px 16px;
   }
   
 }
