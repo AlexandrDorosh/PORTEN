@@ -321,27 +321,40 @@ a:hover {
   line-height: 150%;
   font-family: 'PT Sans', sans-serif;
 }
-
 .main_1_photo{
+  background-image: url('./photo/Rectangle_2.png');
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  width: 880px;
+  height: 730px;
+}
+/* .main_1_photo{
   position: relative;
   z-index: 1;
   padding: 0;
-}
+} */
 
-.main_1_photo .center {
+/* .main_1_photo .center {
 position: absolute;
 z-index: 2;
 top: 80%;
 left: 50%;
 transform: translate(-50%, -50%);
 color: white;
-}
+} */
 
 .main_1_photo .main_1_text {
   display: flex;
   text-align: center;
   flex-direction: column;
   align-items: center;
+  margin-top: 380px;
 }
 .main_1_text h1{
   font-size: 36px;
@@ -364,11 +377,11 @@ color: white;
   border: 1px solid white;
   padding: 10px 30px;
 }
-.main_1_photo img {
+/* .main_1_photo img {
   width: 100%;
   max-height: 730px;
   display: flex;  
-}
+} */
 
 
 .header__burger {
@@ -381,7 +394,6 @@ color: white;
 }
 
 .main_1_watch {
-  flex-grow: 6;
   display: flex;
   flex-direction: column;
   width: 1040px;
@@ -389,6 +401,7 @@ color: white;
   align-items: center;
   background-color: black;
   color: white;
+  padding-bottom: 50px;
 }
 
 .main_1_watch h1 {
@@ -715,6 +728,10 @@ color: white;
   .main_1{
     flex-direction: column;
   }
+  .main_1_photo{
+    width: 100%;
+    background-position: top left;
+  }
   .main_1_watch{
     width: 100%;
   }
@@ -782,7 +799,10 @@ color: white;
     padding: 30px 22px;
   }
   .main_2_photo img{
-    max-width: 630px;
+    width: 100%;
+}
+  .main_2{
+    flex-direction: column;
 }
   .main_2_info hr {
     margin: 10px 0;
@@ -930,13 +950,27 @@ color: white;
   }
   .main_1_watch{
       width: auto;
-      padding: 20px 0;
+      padding-top: 20px;
+      padding-bottom: 50px;
   }
   .main_1_photo{
     height: 450px;
   }
+  .main_1_photo .main_1_text{
+    margin-top: 180px;
+  }
+  .three_watch{
+    flex-direction: column;
+  }
+  .container_watch img{
+    padding: 55px 22px;
+  }
+  .container_watch p{
+    margin-bottom: 30px;
+  }
   .container_watch h3 {
-    padding-top: 15px;
+    padding-top: 25px;
+    padding-bottom: 5px;
   }
   .main_2 {
     display: flex;
