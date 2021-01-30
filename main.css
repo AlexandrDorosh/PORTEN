@@ -323,30 +323,30 @@ a:hover {
 }
 
 .main_1_photo{
-    position: relative;
-    z-index: 1;
-    padding: 0;
+  position: relative;
+  z-index: 1;
+  padding: 0;
 }
-
-
-
 
 .main_1_photo .center {
-  position: absolute;
-  z-index: 2;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
+position: absolute;
+z-index: 2;
+top: 80%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: white;
 }
+
 .main_1_photo .main_1_text {
   display: flex;
+  text-align: center;
   flex-direction: column;
   align-items: center;
 }
 .main_1_text h1{
   font-size: 36px;
   font-family: 'PlayfairDisplay';
+  font-weight: 700;
 }
 .main_1_text hr{
   background-color: white;
@@ -355,9 +355,19 @@ a:hover {
 }
 .main_1_text h2{
   font-family: 'PT Sans';
+  font-weight: 400;
   font-size: 18px;
-  border: 1px solid white;
   padding: 15px 30px;
+}
+.main_1_text a{
+  color: white;
+  border: 1px solid white;
+  padding: 10px 30px;
+}
+.main_1_photo img {
+  width: 100%;
+  max-height: 730px;
+  display: flex;  
 }
 
 
@@ -374,7 +384,7 @@ a:hover {
   flex-grow: 6;
   display: flex;
   flex-direction: column;
-  max-width: 1040px;
+  width: 1040px;
   justify-content: center;
   align-items: center;
   background-color: black;
@@ -383,6 +393,7 @@ a:hover {
 
 .main_1_watch h1 {
   font-family: "PlayfairDisplay";
+  font-weight: 700;
   font-size: 36px;
 }
 .main_1_watch hr {
@@ -401,11 +412,13 @@ a:hover {
 .container_watch h3 {
   font-family: "PlayfairDisplay_r";
   font-size: 18px;
+  font-weight: 400;
   padding-top: 25px;
 }
 
 .container_watch p {
   font-family: "PlayfairDisplay";
+  font-weight: 700;
   font-size: 16px;
   padding-top: 10px;
   color: lightgrey;
@@ -422,12 +435,6 @@ a:hover {
 
 .main_1_photo {
   padding: 0;
-}
-
-.main_1_photo img {
-  width: 100%;
-  max-height: 730px;
-  display: flex;  
 }
 .container_watch img{
     width: 100%;
@@ -705,8 +712,17 @@ a:hover {
   .poster_bottom p {
     line-height: 150%;
   }
+  .main_1{
+    flex-direction: column;
+  }
+  .main_1_watch{
+    width: 100%;
+  }
   .main_1_watch hr {
-    margin: 16px 0;
+    margin: 30px 0;
+  }
+  .main_1_watch h1 {
+    margin-top: 40px;
   }
   
   .footer_about p{
@@ -824,22 +840,6 @@ a:hover {
     padding: 8px 14px;
     border: 0;
   }
-
-  .main_1_text h1{
-    font-size: 26px;
-    font-family: 'PlayfairDisplay';
-  }
-  .main_1_text hr{
-    background-color: white;
-    width: 120px;
-    margin: 15px 0;
-  }
-  .main_1_text h2{
-    font-family: 'PT Sans';
-    font-size: 18px;
-    border: 1px solid white;
-    padding: 10px 20px;
-  }
 }
 @media (max-width: 767px) {
   .container {
@@ -926,11 +926,14 @@ a:hover {
   }
   .main_1{
       display: flex;
-      flex-direction: column-reverse;
+      flex-direction: column;
   }
   .main_1_watch{
       width: auto;
       padding: 20px 0;
+  }
+  .main_1_photo{
+    height: 450px;
   }
   .container_watch h3 {
     padding-top: 15px;
@@ -1047,21 +1050,6 @@ a:hover {
     padding: 10px 20px;
     border: 0;
   }
-  .main_1_text h1{
-    font-size: 36px;
-    font-family: 'PlayfairDisplay';
-  }
-  .main_1_text hr{
-    background-color: white;
-    width: 120px;
-    margin: 30px 0;
-  }
-  .main_1_text h2{
-    font-family: 'PT Sans';
-    font-size: 18px;
-    border: 1px solid white;
-    padding: 15px 30px;
-  }
   
 }
 
@@ -1101,22 +1089,6 @@ a:hover {
   }
   .main_1_watch{
       padding-top: 20px;
-  }
-
-  .main_1_text h1{
-    font-size: 22px;
-    font-family: 'PlayfairDisplay';
-  }
-  .main_1_text hr{
-    background-color: white;
-    width: 120px;
-    margin: 15px 0;
-  }
-  .main_1_text h2{
-    font-family: 'PT Sans';
-    font-size: 15px;
-    border: 1px solid white;
-    padding: 7px 16px;
   }
   .mobile_none{
     display: none;
