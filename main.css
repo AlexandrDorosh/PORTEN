@@ -465,21 +465,16 @@ color: white;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0;
-    width: 880px;
+    width: 85%;
     height: 600px;
     display: flex;
   }
-/* .main_2_photo img {
-    width: 100%;
-    max-height: 600px;
-    display: flex;  
-  } */
 
 .main_2_info {
     flex-grow: 6;
     display: flex;
     flex-direction: column;
-    max-width: 1040px;
+    width: 100%;
     justify-content: center;
     align-items: center;
     background-color: black;
@@ -524,7 +519,7 @@ color: white;
 
 .news{
     padding-top: 120px;
-    padding-bottom: 150px;
+    padding-bottom: 145px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -533,11 +528,15 @@ color: white;
 }
 .news h1{
     font-family: 'PlayfairDisplay';
+    font-weight: 700;
     font-size: 36px;
+    line-height: 48px;
+    text-align: center;
 }
 .news p{
     margin-top: 10px;
     color: lightgrey;
+    font-family: 'PlayfairDisplay';
 }
 
 .news hr{
@@ -564,6 +563,7 @@ color: white;
 
 .new_watch h3 {
     margin-top: 25px;
+    font-family: 'PlayfairDisplay_r';
 }
 .new_watch з {
     color: lightgrey;
