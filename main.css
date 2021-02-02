@@ -493,6 +493,7 @@ color: white;
     font-family: "PlayfairDisplay_r";
     font-weight: 400;
     font-size: 36px;
+    padding: 0 10px;
   }
 .main_2_info hr {
     width: 120px;
@@ -583,6 +584,7 @@ color: white;
   font-size: 36px;
   font-family: 'PlayfairDisplay';
   margin-top: 60px;
+  text-align: center;
 }
 .brands hr{
   width: 120px;
@@ -607,12 +609,14 @@ color: white;
   width: 100%;
   color: white;
   min-height: 400px;
+  display: flex;
 }
 .footer_center{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+  padding: 0;
 }
 .container_footer_bottom{
   background-color: #0F0F0F;
@@ -621,7 +625,7 @@ color: white;
   display: flex;
   justify-content: space-between;
   color: lightgrey;
-  padding: 17px 0;
+  padding: 17px 10px;
 }
 .footer_bottom p{
   font-size: 12px;
@@ -632,33 +636,36 @@ color: white;
   display: flex;
   flex-direction: column;
   width: 350px;
+  margin: 0;
 }
 
 .footer_about p{
   font-size: 14px;
   line-height: 150%;
   font-family: 'PT Sans';
-  margin-top: 40px;
 }
 .footer_about h1{
   font-size: 24px;
   font-family: 'PlayfairDisplay_r';
+  margin: 80px 0 40px;
 }
 
 .footer_about_2{
   display: flex;
   flex-direction: column;
   width: 350px;
+  margin: 0;
 }
 .footer_categories{
-  margin-top: 40px;
   font-size: 14px;
 }
 .footer_about_2 h1{
   font-size: 24px;
   font-family: 'PlayfairDisplay_r';
+  margin: 80px 0 40px;
 }
-.footer_categories button{
+.footer_categories a{
+  display: inline-flex;
   font-size: 14px;
   margin-bottom: 20px;
   padding: 10px 20px;
@@ -666,33 +673,40 @@ color: white;
   color: lightgrey;
   margin-right: 20px;
   border: 0px;
+  font-family: 'PT Sans';
 }
 
 .footer_about_3{
   display: flex;
   flex-direction: column;
   width: 350px;
+  margin: 0;
+  margin-bottom: 20px;
 }
 .footer_about_3 h1{
   font-size: 24px;
   font-family: 'PlayfairDisplay_r';
+  margin: 80px 0 40px;
 }
 .footer_about_3 p{
   font-size: 14px;
   line-height: 150%;
   font-family: 'PT Sans';
-  margin: 40px 0;
 }
 .footer_subscribe{
   display: flex;
 }
 .footer_subscribe input{
-  height: 42px;
+  width: 210px;
+  height: 40px;
   font-family: 'PT Sans';
-  background-color: white;
-  color: white;
+  background: gray;
   padding-left: 20px;
   border: 0;
+  margin-top: 35px;
+}
+.footer_subscribe input::placeholder{
+  color: #FFFFFF;
 }
 .footer_subscribe button{
   background-color: #0F0F0F;
@@ -700,12 +714,16 @@ color: white;
   padding: 10px 20px;
   border: 0;
   font-family: 'PT Sans';
+  margin-top: 35px;
 }
 
 
 @media (max-width: 1200px) {
-  .container {
-    max-width: 970px;
+  .top{
+    padding: 0 15px;
+  }
+  .c-header-2{
+    padding: 0 30px;
   }
   .poster_bottom p {
     line-height: 150%;
@@ -731,6 +749,9 @@ color: white;
   .container {
     max-width: 750px;
   }
+  .c-header-2{
+    padding: 0 15px;
+  }
   .poster_bottom {
     margin-top: 80px;
   }
@@ -755,6 +776,10 @@ color: white;
   .main_2_info p{
     padding-bottom: 50px;
   }
+  .news{
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
   .footer_center{
     flex-wrap: wrap;
   }
@@ -762,6 +787,9 @@ color: white;
 @media (max-width: 767px) {
   .container {
     max-width: none;
+  }
+  .c-header-2{
+    padding: 0 30px;
   }
   body.lock {
     overflow: hidden;
@@ -877,11 +905,29 @@ color: white;
   .main_2_photo{
     height: 450px;
   }
+  .footer_center{
+    justify-content: center;
+  }
+  .footer_about h1{
+    margin: 30px 0 20px;
+  }
+  .footer_about_2 h1{
+    margin: 30px 0 20px;
+  }
+  .footer_about_3 h1{
+    margin: 30px 0 20px;
+  }
 }
 
 @media (max-width: 576px) {
   .c-header-1 {
     padding: 10px 15px;
+  }
+  .top{
+    padding: 0;
+  }
+  .c-header-2{
+    padding: 0 15px;
   }
   .left-ul {
     flex-wrap: wrap;
@@ -918,5 +964,12 @@ color: white;
   }
   .mobile_none{
     display: none;
+  }
+  .footer_subscribe{
+    flex-direction: column;
+  }
+  .footer_subscribe button{
+    margin-top: 10px;
+    width: 210px;
   }
 }

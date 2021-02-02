@@ -5,14 +5,14 @@ let body = document.querySelector('body');
 
 
 
-headerBurger.addEventListener('click', function(event){
+headerBurger.addEventListener('click', function(){
     menu.classList.toggle('active');
     headerBurger.classList.toggle('active');
     body.classList.toggle('lock')
 })
 
 for(let i = 0; i < headerLink.length; i++){
-    headerLink[i].addEventListener('click', function(event){
+    headerLink[i].addEventListener('click', function(){
         menu.classList.toggle('active');
         headerBurger.classList.toggle('active');
     })
