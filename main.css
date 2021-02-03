@@ -168,7 +168,7 @@ table {
 }
 .left-ul img {
   margin-top: 1px;
-  margin-right: 12px;
+  margin-right: 5px;
 }
 
 .c-header-1 {
@@ -445,6 +445,9 @@ color: white;
   justify-content: center;
   align-items: center;
 }
+.carousel-item{
+  background-color: black;
+}
 
 .main_1_photo {
   padding: 0;
@@ -551,6 +554,9 @@ color: white;
     flex-wrap: wrap;
     justify-content: center;
 }
+.carousel-mobile{
+  display: none;
+}
 
 .new_watch {
     margin: 20px 12px;
@@ -566,8 +572,9 @@ color: white;
     margin-top: 25px;
     font-family: 'PlayfairDisplay_r';
 }
-.new_watch з {
+.new_watch p {
     color: lightgrey;
+    margin-bottom: 50px;
 }
 
 .container_brands{
@@ -919,6 +926,14 @@ color: white;
   }
 }
 
+@media (max-width: 598px) {
+  .news_watchs{
+    display: none;
+  }
+  .carousel-mobile{
+    display: block;
+  }
+}
 @media (max-width: 576px) {
   .c-header-1 {
     padding: 10px 15px;
